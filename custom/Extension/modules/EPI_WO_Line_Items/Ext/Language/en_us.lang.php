@@ -1,0 +1,32 @@
+<?php
+// WARNING: The contents of this file are auto-generated.
+$mod_strings['LBL_INTERIOR_EXTERIOR_C'] = 'Interior/Exterior';
+$mod_strings['LBL_PRIMARY_INTERIOR'] = 'Primary Area To Be Serviced Interior';
+$mod_strings['LBL_ADDITIONAL_AREAS_INTERIOR'] = 'Additional Areas(interior)';
+$mod_strings['LBL_NAME'] = 'Name';
+$mod_strings['LBL_RECORDVIEW_PANEL1'] = 'Sherwin Williams Products';
+$mod_strings['LBL_RECORD_BODY'] = 'Application';
+$mod_strings['LBL_DECK_PATIO'] = 'Application of Deck/Patio Area';
+$mod_strings['LBL_RECORDVIEW_PANEL2'] = 'Area of Attention';
+$mod_strings['LBL_SUNWARE'] = 'Sun Ware';
+$mod_strings['LBL_FADED'] = 'Faded';
+$mod_strings['LBL_CHALKING'] = 'Chalking';
+$mod_strings['LBL_WEATHERING'] = 'Weathering';
+$mod_strings['LBL_MILDEW_DECAY'] = 'Mildew &amp; Decay Buildup';
+$mod_strings['LBL_PEELING_FLAKING'] = 'Peeling  &amp; Flaking';
+$mod_strings['LBL_DESCRIPTION'] = 'Notes';
+$mod_strings['LBL_WATER_SEALED'] = 'Water Sealed';
+$mod_strings['LBL_SURFACE_BONDAGE'] = 'Surface Bondage';
+$mod_strings['LBL_STRUCTURAL_FAILURES'] = 'Structural Failures';
+$mod_strings['LBL_SHOW_MORE'] = 'Extra Notes';
+$mod_strings['LBL_PRIMARY_AREA_SERVICED_OTHER'] = 'Primary Area to be Serviced Other';
+$mod_strings['LBL_LINE_ITEM_NUM'] = 'Line Item Number';
+$mod_strings['LBL_OTHER_AREA'] = 'Other Area';
+$mod_strings['LBL_PRIMARY_AREA_EXTERIOR'] = 'Primary Area To Be Serviced Exterior';
+$mod_strings['LBL_PREP_INTERIOR'] = 'Preparation Interior';
+$mod_strings['LBL_PREP_DECK'] = 'Preparation Deck/Patio';
+$mod_strings['LBL_PREP_EXTERIOR'] = 'Preparation Exterior';
+$mod_strings['LBL_RECORDVIEW_PANEL3'] = 'New Panel 3';
+$mod_strings['LBL_OPPORTUNITIES_EPI_WO_LINE_ITEMS_1_FROM_OPPORTUNITIES_TITLE'] = 'Opportunity';
+$mod_strings['LBL_AVERAGE_AREAS_OF_ATTENTION'] = 'Average Areas of Attention';
+$mod_strings['LBL_AREAS_OF_ATTENTION_RATING'] = 'Areas of Attention Rating';

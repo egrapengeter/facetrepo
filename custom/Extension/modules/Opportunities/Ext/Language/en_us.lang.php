@@ -1,0 +1,33 @@
+<?php
+// WARNING: The contents of this file are auto-generated.
+$mod_strings['LBL_OPPORTUNITIES_EPI_WO_LINE_ITEMS_1_FROM_EPI_WO_LINE_ITEMS_TITLE'] = 'WO Line Items';
+$mod_strings['LBL_DEPOSITE_REC_DATE'] = 'Deposit Received Date';
+$mod_strings['LBL_CURRENCY_0'] = 'LBL_CURRENCY';
+$mod_strings['LBL_DEPOSIT_REC_AMOUNT'] = 'Deposit Received ';
+$mod_strings['LBL_EXPECTED_JOB_START'] = 'Expected Job Start';
+$mod_strings['LBL_OPPORTUNITIES_PAILI_PAINTLINEITEMS_1_FROM_PAILI_PAINTLINEITEMS_TITLE'] = 'Paint Line Items';
+$mod_strings['LBL_CURRENCY_1'] = 'LBL_CURRENCY';
+$mod_strings['LBL_ACTUAL_COST'] = 'Paint Product Cost';
+$mod_strings['LBL_CURRENCY_2'] = 'LBL_CURRENCY';
+$mod_strings['LBL_CUSTOMER_ADJUSTED_COST'] = 'Total Estimate';
+$mod_strings['LBL_TOUCH_UP_PLAN'] = 'Touch Up Plan';
+$mod_strings['LBL_CURRENCY_3'] = 'LBL_CURRENCY';
+$mod_strings['LBL_TOUCH_UP_COST'] = 'Touch Up Plan Cost';
+$mod_strings['LBL_CURRENCY_4'] = 'LBL_CURRENCY';
+$mod_strings['LBL_SIGNATURE'] = 'Signature';
+$mod_strings['LBL_CURRENCY_5'] = 'LBL_CURRENCY';
+$mod_strings['LBL_GOOD'] = 'Good';
+$mod_strings['LBL_CURRENCY_6'] = 'LBL_CURRENCY';
+$mod_strings['LBL_BETTER'] = 'Better';
+$mod_strings['LBL_INVOICE_NUMBER'] = 'Invoice Number';
+$mod_strings['LBL_OPPORTUNITY_NAME'] = 'Opportunity Name:';
+$mod_strings['LBL_CURRENCY_7'] = 'LBL_CURRENCY';
+$mod_strings['LBL_CURRENCY_8'] = 'LBL_CURRENCY';
+$mod_strings['LBL_BEST'] = 'Best';
+$mod_strings['LBL_CURRENCY_9'] = 'LBL_CURRENCY';
+$mod_strings['LBL_WORST'] = 'Worst';
+$mod_strings['LBL_CURRENCY_10'] = 'LBL_CURRENCY';
+$mod_strings['LBL_LIME_SIGNATURE'] = 'Lime Signature';
+$mod_strings['LBL_EXPECTED_COMPLETION_DATE'] = 'Expected Completion Date';
+$mod_strings['LBL_LIKELY'] = 'Likely';
+$mod_strings['LBL_USERS_OPPORTUNITIES_1_FROM_USERS_TITLE'] = 'Production Coordinator';

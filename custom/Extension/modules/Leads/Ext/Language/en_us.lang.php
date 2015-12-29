@@ -1,0 +1,36 @@
+<?php
+// WARNING: The contents of this file are auto-generated.
+$mod_strings['LBL_HOME_CLASS'] = 'Home Class';
+$mod_strings['LBL_RATING'] = 'Rating';
+$mod_strings['LBL_PROPERTY_TYPE'] = 'Property Type';
+$mod_strings['LBL_PRIORITY_NOT_HOME'] = 'Priority Not Home';
+$mod_strings['LBL_READY_FOR_SALE'] = 'Ready For Sale';
+$mod_strings['LBL_CONTACT_TIME'] = 'Contact Time';
+$mod_strings['LBL_TIMES_CALLED'] = 'Times Called';
+$mod_strings['LBL_TYPE_OF_SUBSTRATE'] = 'Type of Substrate';
+$mod_strings['LBL_STATUS'] = 'Status:';
+$mod_strings['LBL_ACCOUNT_NAME'] = 'Account Name:';
+$mod_strings['LBL_COMPANY_NAME'] = 'Company Name';
+$mod_strings['LBL_OFFICE_PHONE'] = 'Office Phone:';
+$mod_strings['LBL_SUB_DIVISION'] = 'Subdivision';
+$mod_strings['LBL_LEADS_ADR_ADDRESSES_1_FROM_ADR_ADDRESSES_TITLE'] = 'Address';
+$mod_strings['LBL_PRIMARY_ADDRESS_STREET'] = 'Site Address Street';
+$mod_strings['LBL_PRIMARY_ADDRESS_CITY'] = 'Site Address City';
+$mod_strings['LBL_PRIMARY_ADDRESS_STATE'] = 'Site Address State';
+$mod_strings['LBL_PRIMARY_ADDRESS_POSTALCODE'] = 'Site Address Postal Code';
+$mod_strings['LBL_PRIMARY_ADDRESS_COUNTRY'] = 'Site Address Country';
+$mod_strings['LBL_PRIMARY_ADDRESS'] = 'Site Address                     **';
+$mod_strings['LBL_ALT_ADDRESS'] = 'Billing Address                     **';
+$mod_strings['LBL_ALT_ADDRESS_STREET'] = 'Billing Address Street';
+$mod_strings['LBL_ALT_ADDRESS_CITY'] = 'Billing Address City';
+$mod_strings['LBL_ALT_ADDRESS_STATE'] = 'Billing Address State';
+$mod_strings['LBL_ALT_ADDRESS_POSTALCODE'] = 'Billing Address Postal Code';
+$mod_strings['LBL_ALT_ADDRESS_COUNTRY'] = 'Billing Address Country';
+$mod_strings['LBL_FOLLOW_UP_AT_LATER_DATE'] = 'Follow Up At Later Date';
+$mod_strings['LBL_FOLLOW_UP_DATE_REQUESTED'] = 'Follow Up Date Requested';
+$mod_strings['LBL_BEST_CONTACT_DAYS'] = 'Best Contact Day 1';
+$mod_strings['LBL_BEST_CONTACT_DAY_2'] = 'Best Contact Day 2';
+$mod_strings['LBL_BEST_CONTACT_DAY_3'] = 'Best Contact Day 3';
+$mod_strings['LBL_PRIMARY_ADDRESS_ST_NUMBER'] = 'Primary Address St Number';
+$mod_strings['LBL_PICK_UP_YARD_SIGN'] = 'Pick Up Yard Sign';
+$mod_strings['LBL_TURF_REGION'] = 'Turf Region';

@@ -1,0 +1,109 @@
+<div style="width:850px">
+<table border="0" style="width:100%;font-family:sans-serif;">
+<tr>
+	<td></td>
+	<td>
+		<table  cellpadding="5" style="border-spacing:0;border:none; border-radius:10px;margin:0 auto;">
+			<tr><td style="font-size:10px;padding:5px;border:none;border-top-left-radius:10px;border-top-right-radius:10px;text-align:center;">Contract Number</td></tr>
+			<tr><td style="font-size:10px;padding:5px 5px 12px 5px;border:none;border-bottom-left-radius:10px;border-bottom-right-radius:10px;text-align:center;">{opportunity:invoice_number_c}</td></tr></table>
+	</td>
+	<td></td>
+</tr>
+<br/>
+<tr>
+	<td>
+		<table  cellpadding="5" style="width:100%;border-spacing:0;border:none; border-radius:10px;">
+			<tr>
+				<td style="font-size:10px;padding:5px 5px 12px 5px;border:none;border-top-left-radius:10px;border-top-right-radius:10px;">Date Estimated & Presented: <span style="margin-left:10px;"> {date:now}</span></td>
+			</tr>
+			<tr>
+				<td style="font-size:10px;padding:5px 5px 12px 5px;border:none;">Advisor: <span style="margin-left:10px;"> {opportunity:assigned_user_name}</span></td>
+			</tr>
+			<tr>
+				<td style="font-size:10px;padding:5px 5px 12px 5px;border:none;border-bottom-left-radius:10px;border-bottom-right-radius:10px;">Advisor Office Phone: <span style="margin-left:10px;"> {opportunity:assigned_user_phone}</span></td>
+			</tr>
+		</table>
+	</td>
+
+	<td style="text-align:center;"><br/><img src="custom/themes/default/images/pdf_logo_small.png" alt="Lime Painting Logo" width="150"/></td>
+
+	<td style="text-align:center;">
+		<span style="font-size:13px;color:#80b43d;">Agreement For Painting</span><br/><span style="font-size:11px;color:#80b43d;">Between<br/></span>
+		<table  cellpadding="5" style="width:100%;border-spacing:0;border:none;border-radius:10px;">
+			<tr>
+				<td style="font-size:10px;padding:5px 5px 12px 5px;border:none;border-top-left-radius:10px;border-top-right-radius:10px;text-align:left;">
+                                    Contractor: <span style="margin-left:10px;"> {contractor:name}</span><br>
+                                    Address: <span style="margin-left:10px;"> {contractor:address1}</span><br>
+                                    <span style="margin-left:10px;"> {contractor:address2}</span>
+                                </td>
+			</tr>
+			<tr>
+				<td style="font-size:10px;padding:5px 5px 12px 5px;border:none;border-bottom-left-radius:10px;border-bottom-right-radius:10px;text-align:left;">Advisor: <span style="margin-left:10px;"> {opportunity:assigned_user_name}</span></td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+
+<table  style="width:100%;font-family:sans-serif;">
+<tr>
+	<td width="70%">
+		<table  cellpadding="5" style="width:100%;border-spacing:0;border:none;border-radius:10px;">
+			<tr>
+				<td colspan="2" style="font-size:10px;padding:5px 5px 12px 5px;border:none;border-top-left-radius:10px;border-top-right-radius:10px;">Account: <span style="margin-left:10px;"> {account:name}</span></td>
+			</tr>
+			<tr>
+				<td colspan="2"  style="font-size:10px;padding:5px 5px 12px 5px;border:none;">Address: <span style="margin-left:10px;"> {account:address1}</span></td>
+			</tr>
+			<tr>
+				<td colspan="2"  style="font-size:10px;padding:5px 5px 12px 5px;border:none;">&nbsp;{account:address2}</td>
+			</tr>
+			<tr>
+				<td style="font-size:10px;padding:5px 5px 12px 5px;border:none;border-bottom-left-radius:10px;">Cell Phone: <span style="margin-left:10px;"> {account:cell_phone}</span></td>
+				<td style="font-size:10px;padding:5px 5px 12px 5px;border:none;border-bottom-right-radius:10px;">Home Phone: <span style="margin-left:10px;"> {account:home_phone}</span></td>
+			</tr>
+			<tr>
+				<td colspan="2"  style="font-size:10px;padding:5px 5px 12px 5px;border:none;">Email Address: <span style="margin-left:10px;"> {account:email_address}</span></td>
+			</tr>
+		</table>
+	</td>
+	<td width="30%" style="text-align:center;">
+		<strong style="font-size:12px;">Please Read the<br/>
+		Attached Agreement<br/></strong>
+
+		<span style="font-size:10px;">
+		8156 S Wadsworth Blvd Unit E-206<br/>
+		Littleton, CO 80128<br/>
+		720-708-7807<br/>
+		www.LimePainting.com<br/>
+		nick@limepainting.com</span>
+	</td>
+</tr>
+</table>
+
+<strong style="font-family:Arial,sans-serif;font-size:9px;text-align:center;">
+	<br/>
+	<span style="padding-left:10px;">THREE YEAR WRITTEN GUARANTEE OF QUALITY</span>
+	<span style="padding-left:15px;"> ~ LIABILITY INSURANCE COVERAGE</span>
+	<span style="padding-left:15px;"> ~ FULL WORKER'S COMPENSATION COVERAGE</span>
+	<br/><br/>
+</strong>
+
+{html_from_php:line_items}
+<div style="height:100px;">&nbsp;</div>
+
+{html_from_php:areas_of_attention}
+<div style="height:100px;">&nbsp;</div>
+
+<table cellpadding="0" style="width:100%;font-family:Arial,sans-serif;font-size:10px;">
+	<tr>
+		<td width="49%">{html_from_php:footer}</td>
+		<td width="49%" valign="top"><img src="{opportunity:signature_c}" width="300"/>Contractor Signature</td>
+	</tr>
+        <tr>
+		<td width="49%"></td>
+		<td width="49%" valign="top"><img src="{users:signature_c}" width="300"/><br>Lime Painting</td>
+	</tr>
+</table>
+
+</div>

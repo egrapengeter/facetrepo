@@ -1,0 +1,223 @@
+<style type="text/css">
+.total-line {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+#signatureparent {
+  background-color: $f0f0f0;
+}
+.table-label {
+  background-color: #f6f6f6;
+}
+.centered-pane {
+  position: absolute;
+  top: 41px;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.jSignature {
+  background-color: #e8e8e8;
+}
+.scrollable {
+    width: 100%;
+    overflow: auto;
+}
+</style>
+
+<div class="container">
+<div class="row-fluid">
+
+{{#if account}}
+{{#if opportunity}}
+
+<h3>Order Details</h3>
+<div class="scrollable">
+<table class="table">
+  <tbody>
+    <tr>
+      <td class="table-label">Contract Number:</td>
+      <td>1</td> <!-- No Contract Number? -->
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="table-label">Date Estimated & Presented:</td>
+      <td>{{date opportunity.date_entered}}</td>
+      <td class="table-label">Name of Contractor:</td>
+      <td>{{contractor.name}}<br>
+          Contact: {{contractor.first_name_c}} {{contractor.last_name_c}}<br>
+          Office Phone: {{contractor.phone_office}}</td>
+    </tr>
+    <tr>
+      <td class="table-label">Home Advisor:</td>
+      <td>{{opportunity.assigned_user_name}}</td>
+      <td class="table-label">Address of Contractor:</td>
+      <td>{{contractor.billing_address_street}}
+        <br>{{contractor.billing_address_city}}, {{contractor.billing_address_state}} {{contractor.billing_address_postalcode}}
+      </td>
+    </tr>
+    <tr>
+      <td class="table-label">Advisor Office Phone:</td>
+      <td>{{opportunity.advisor_phone}}</td>
+      <td class="table-label">Cell Phone:</td>
+      <td>{{account.phone_office}}</td>
+    </tr>
+    <tr>
+      <td class="table-label">Home Phone:</td>
+      <td>{{account.phone_alternate}}</td>
+      <td class="table-label">Name of Homeowner:</td>
+      <td>{{account.name}}</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td class="table-label">Address of Homeowner:</td>
+      <td>{{account.billing_address_street}}
+        <br>{{account.billing_address_city}}, {{account.billing_address_state}} {{account.billing_address_postalcode}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3>Line Items</h3>
+<div class="scrollable">
+<table class="table table-bordered" style="min-width:600px;">
+  <thead>
+    <th>Item #</th>
+    <th>Interior / Exterior / Patio</th>
+    <th>Preparation</th>
+    <th>Primary Area of Application</th>
+    <th>Additional Areas</th>
+    <th>Other Areas</th>
+    <th>Products</th>
+    <th>Notes</th>
+  </thead>
+  <tbody>
+    {{#each line_items}}
+    <tr>
+      <td>{{this.line_item_num_c }}</td>
+      <td>{{translateValue ../interior_exterior_c_list this.interior_exterior_c}}</td>
+      <td>{{this.prep_items_list_c}}</td>
+      <td>
+        {{#eq this.interior_exterior_c 'Interior'}}
+          {{translateMultiValue ../../primary_interior_list ../primary_interior_c}}</td>
+        {{/eq}}
+        {{#eq this.interior_exterior_c 'Exterior'}}
+          {{this.application_items_list_c}}</td>
+        {{/eq}}
+        {{#eq this.interior_exterior_c 'deckpatio'}}
+          {{translateMultiValue ../../deck_patio_list ../deck_patio_c}}</td>
+        {{/eq}}
+      <td>{{translateMultiValue ../additional_areas_interior_list this.additional_areas_interior_c}}</td>
+      <td>{{translateValue ../primary_interior_list this.primary_area_serviced_other_c}}</td>
+      <td>{{this.paints}}</td>
+      <td style="max-width: 320px">{{this.description}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+
+{{#if areas_of_attention}}
+<h4>Areas of Attention (1 = moderate, 5 = extreme)</h4>
+<div class="scrollable">
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Item #</th>
+      <th>Sun Ware</th>
+      <th>Faded</th>
+      <th>Chalking</th>
+      <th>Mildew & Decay Buildup</th>
+      <th>Peeling & Flaking</th>
+      <th>Structural Failures</th>
+      <th>Surface Bondage</th>
+      <th>Water Sealed</th>
+      <th>Weathering</th>
+      <th>Score</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each areas_of_attention}}
+    <tr>
+      <td>{{this.line_item_num_c}}</td>
+      <td>{{translateValue ../area_of_attention_list this.sunware_c}}</td>
+      <td>{{translateValue ../area_of_attention_list this.faded_c}}</td>
+      <td>{{translateValue ../area_of_attention_list this.chalking_c}}</td>
+      <td>{{translateValue ../area_of_attention_list this.mildew_decay_c}}</td>
+      <td>{{translateValue ../area_of_attention_list this.peeling_flaking_c}}</td>
+      <td>{{translateValue ../area_of_attention_list this.structural_failures_c}}</td>
+      <td>{{translateValue ../area_of_attention_list this.surface_bondage_c}}</td>
+      <td>{{translateValue ../area_of_attention_list this.water_sealed_c}}</td>
+      <td>{{translateValue ../area_of_attention_list this.weathering_c}}</td>
+      <td>{{this.average_areas_of_attention_c}}</td>
+      <td>{{this.areas_of_attention_rating_c}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+{{/if}}
+
+<h4>Project Classification: {{account.home_class_c}}</h4>
+
+<h3>Final</h3>
+<table class="table">
+  <tbody>
+    {{#if opportunity.touch_up_plan_c}}
+    <tr>
+      <td>3 to 5 Year Touch Plan</td>
+      <td class="pull-right">{{dollarAmount opportunity.touch_up_cost_c}}</td>
+    </tr>
+    {{/if}}
+    <tr></tr>
+    <tr>
+      <td>Expected Job Start</td>
+      <td class="pull-right">{{opportunity.expected_job_start_c}}</td>
+    </tr>
+    <tr>
+      <td>Expected Completion</td>
+      <td class="pull-right">{{opportunity.expected_completion_date_c}}</td>
+    </tr>
+    <tr></tr>
+    <tr>
+      <td>Total Estimate</td>
+      <td class="pull-right" style="text-align:right">
+        <b>Good:</b> {{dollarAmount opportunity.contractor_total_c}} <br>
+        <b>Better:</b> {{dollarAmount opportunity.contractor_total_better_c}} <br>
+        <b>Best:</b> {{dollarAmount opportunity.contractor_total_best_c}} <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Lime Signature</h3>
+<div id="limesignatureparent">
+  <div id="limesignature"></div>
+  <i>{{opportunity.assigned_user_name}}</i>
+</div>
+
+<h3>Contractor Signature</h3>
+<div id="signatureparent">
+  <div id="signature"></div>
+  <i>{{contractor.name}}</i>
+</div>
+
+<div class="pull-right">
+  <button id="reset" class="btn btn-default">Reset</button>
+  <button id="cancel" class="btn btn-default">Cancel</button>
+  <button id="submit" class="btn btn-success">Submit</button>
+</div>
+
+
+{{/if}}
+{{/if}}
+
+</div>
+</div>

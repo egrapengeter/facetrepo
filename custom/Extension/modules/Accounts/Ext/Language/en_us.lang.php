@@ -1,0 +1,25 @@
+<?php
+// created: 2015-07-17 17:01:39
+$mod_strings = array (
+  'LBL_HOME_CLASS' => 'Home Class',
+  'LBL_PROPERTY_TYPE' => 'Property Type',
+  'LBL_LEAD_RATING' => 'Rating',
+  'LBL_PHONE_OFFICE' => 'Home Phone',
+  'LBL_TYPE' => 'Type:',
+  'LBL_COMPANY_NAME' => 'Company Name',
+  'LBL_OTHER_PHONE' => 'Cell Phone',
+  'LBL_TYPE_OF_SUBSTRATE' => 'Type of Substrate',
+  'LBL_READY_FOR_SALE' => 'Ready for Sale',
+  'LBL_SHIPPING_ADDRESS_STREET' => 'Site Address Street:',
+  'LBL_SHIPPING_ADDRESS_CITY' => 'Site Address City:',
+  'LBL_SHIPPING_ADDRESS_STATE' => 'Site Address State:',
+  'LBL_SHIPPING_ADDRESS_POSTALCODE' => 'Site Address Postal Code:',
+  'LBL_SHIPPING_ADDRESS_COUNTRY' => 'Site Address Country:',
+  'LBL_BILLING_ADDRESS_STREET' => 'Billing Address Street:',
+  'LBL_BILLING_ADDRESS_CITY' => 'Billing Address City:',
+  'LBL_BILLING_ADDRESS_STATE' => 'Billing Address State:',
+  'LBL_BILLING_ADDRESS_POSTALCODE' => 'Billing Address Postal Code:',
+  'LBL_BILLING_ADDRESS_COUNTRY' => 'Billing Address Country:',
+  'LBL_SHIPPING_ADDRESS' => 'Site Address                     **',
+  'LBL_SUB_DIVISION' => 'Subdivision',
+);
